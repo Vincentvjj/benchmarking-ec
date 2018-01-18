@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE tsung SYSTEM "/usr/local/Cellar/tsung/1.7.0/share/tsung/tsung-1.0.dtd" []>
-<tsung loglevel="debug">
+<?xml version="1.0"?><tsung loglevel="debug">
     <clients>
         <client host="localhost" cpu="1" maxusers="30000" use_controller_vm="true"/>
     </clients>
@@ -17,21 +15,18 @@
     <sessions>
         <session name="mqtt_publisher" probability="100" type="ts_mqtt">
             <set_option name="certificate">
-                <certificate cacertfile="/Users/vincentjoe/Downloads/root-CA.crt"
-                keyfile="/Users/vincentjoe/Downloads/mac-test.private.key" keypass="" certfile="/Users/vincentjoe/Downloads/mac-test.cert.pem"/>
+                <certificate cacertfile="/Users/vincentjoe/Downloads/root-CA.crt" keyfile="/Users/vincentjoe/Downloads/mac-test.private.key" keypass="" certfile="/Users/vincentjoe/Downloads/mac-test.cert.pem"/>
             </set_option>
             <request>
-                <mqtt type="connect" clean_start="true" keepalive="10000" will_topic="will_topic" will_qos="0" will_msg="will_msg" will_retain="false"></mqtt>
+                <mqtt type="connect" clean_start="true" keepalive="10000" will_topic="will_topic" will_qos="0" will_msg="will_msg" will_retain="false"/>
             </request>
-            <thinktime value="30"></thinktime> 
+            <thinktime value="30"/> 
             <request subst="true">
                 <mqtt type="publish" topic="test_topic" qos="0" retained="false">test_message from TSUNG</mqtt>
             </request>
-            <thinktime value="30"></thinktime> 
+            <thinktime value="30"/> 
 
         </session>
     </sessions>
     
 </tsung>
-
-
