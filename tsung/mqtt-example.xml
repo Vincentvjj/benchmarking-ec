@@ -10,8 +10,8 @@
     </servers>
 
      <load>
-        <arrivalphase phase="1" duration="3" unit="minute">
-            <users arrivalrate="1" unit="second"/>
+        <arrivalphase phase="1" duration="4" unit="second">
+            <users arrivalrate="100" unit="second"/>
         </arrivalphase>
     </load>
     <sessions>
@@ -27,8 +27,6 @@
             <request subst="true">
                 <mqtt type="publish" topic="test_topic" qos="0" retained="false">test_message from TSUNG</mqtt>
             </request>
-            <thinktime value="30"></thinktime> 
-
         </session>
     </sessions>
     
