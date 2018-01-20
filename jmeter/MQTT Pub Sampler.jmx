@@ -4,7 +4,7 @@
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
@@ -18,7 +18,7 @@
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">5</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -26,14 +26,18 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 1s" enabled="false">
-          <stringProp name="RunTime.seconds">2</stringProp>
-        </RunTime>
+        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
+          <intProp name="calcMode">0</intProp>
+          <doubleProp>
+            <name>throughput</name>
+            <value>10000.0</value>
+            <savedValue>0.0</savedValue>
+          </doubleProp>
+        </ConstantThroughputTimer>
         <hashTree/>
-        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">true</boolProp>
-          <stringProp name="LoopController.loops">200</stringProp>
-        </LoopController>
+        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 1s" enabled="true">
+          <stringProp name="RunTime.seconds">60</stringProp>
+        </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="MQTT Pub 1" enabled="true">
             <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/emqtt.jks</stringProp>
@@ -64,6 +68,11 @@
           </net.xmeter.samplers.PubSampler>
           <hashTree/>
         </hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="false">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">200</stringProp>
+        </LoopController>
+        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Lung Sensor" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -72,7 +81,7 @@
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">5</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -86,7 +95,7 @@
         <hashTree/>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">true</boolProp>
-          <stringProp name="LoopController.loops">200</stringProp>
+          <stringProp name="LoopController.loops">500</stringProp>
         </LoopController>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="MQTT Pub 2" enabled="true">
@@ -126,7 +135,7 @@
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">5</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -140,59 +149,10 @@
         <hashTree/>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">true</boolProp>
-          <stringProp name="LoopController.loops">200</stringProp>
+          <stringProp name="LoopController.loops">1000</stringProp>
         </LoopController>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="MQTT Pub 3" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/client.p12</stringProp>
-            <stringProp name="mqtt.conn_keep_alive">300</stringProp>
-            <stringProp name="mqtt.conn_attampt_max">0</stringProp>
-            <stringProp name="mqtt.keep_time">1800</stringProp>
-            <stringProp name="mqtt.client_id_prefix">pub_</stringProp>
-            <boolProp name="mqtt.conn_share">false</boolProp>
-            <boolProp name="mqtt.client_id_suffix">true</boolProp>
-            <stringProp name="mqtt.reconn_attampt_max">0</stringProp>
-            <stringProp name="mqtt.conn_timeout">10</stringProp>
-            <boolProp name="mqtt.dual_ssl_authentication">true</boolProp>
-            <stringProp name="mqtt.keystore_password">password</stringProp>
-            <stringProp name="mqtt.clientcert_password">password</stringProp>
-            <stringProp name="mqtt.port">8883</stringProp>
-            <stringProp name="mqtt.protocol">SSL</stringProp>
-            <stringProp name="mqtt.server">a205s9oarssudz.iot.us-west-2.amazonaws.com</stringProp>
-            <stringProp name="mqtt.version">3.1</stringProp>
-            <stringProp name="mqtt.user_name"></stringProp>
-            <stringProp name="mqtt.password"></stringProp>
-            <stringProp name="mqtt.topic_name">test_topic</stringProp>
-            <stringProp name="mqtt.qos_level">0</stringProp>
-            <boolProp name="mqtt.add_timestamp">true</boolProp>
-            <stringProp name="mqtt.message_type">String</stringProp>
-            <stringProp name="mqtt.message_type_fixed_length">1024</stringProp>
-            <stringProp name="mqtt.message_to_sent"></stringProp>
-          </net.xmeter.samplers.PubSampler>
-          <hashTree/>
-        </hashTree>
-      </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="1 users runtime 1s" enabled="false">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
-        </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
-        <longProp name="ThreadGroup.start_time">1516379766000</longProp>
-        <longProp name="ThreadGroup.end_time">1516379766000</longProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"></stringProp>
-        <stringProp name="ThreadGroup.delay"></stringProp>
-      </ThreadGroup>
-      <hashTree>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 1s" enabled="true">
-          <stringProp name="RunTime.seconds">2</stringProp>
-        </RunTime>
-        <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="MQTT Pub 2" enabled="true">
             <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/emqtt.jks</stringProp>
             <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
@@ -306,7 +266,7 @@
         </objProp>
         <stringProp name="filename"></stringProp>
         <longProp name="interval_grouping">1000</longProp>
-        <boolProp name="graph_aggregated">false</boolProp>
+        <boolProp name="graph_aggregated">true</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
         <stringProp name="exclude_sample_labels"></stringProp>
         <stringProp name="start_offset"></stringProp>
