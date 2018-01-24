@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample ts="1516751420716" lb="5 Sensors connected to Google" rm="Publish failed for connection null." tn="A thread group of 5 sensors for Google 1-1" dt="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<sample ts="1516751420905" lb="5 Sensors connected to Google" rm="Publish failed for connection null." tn="A thread group of 5 sensors for Google 1-1" dt="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<sample ts="1516751421504" lb="5 Sensors connected to Google" rm="Publish failed for connection null." tn="A thread group of 5 sensors for Google 1-1" dt="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<sample ts="1516751422104" lb="5 Sensors connected to Google" rm="Publish failed for connection null." tn="A thread group of 5 sensors for Google 1-1" dt="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<sample ts="1516751422704" lb="5 Sensors connected to Google" rm="Publish failed for connection null." tn="A thread group of 5 sensors for Google 1-1" dt="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<sample ts="1516751423312" lb="5 Sensors connected to Google" rm="Publish failed for connection null." tn="A thread group of 5 sensors for Google 1-1" dt="">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+
+</testResults>
