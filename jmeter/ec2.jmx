@@ -96,7 +96,7 @@
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>1000.0</value>
+            <value>500.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
@@ -212,7 +212,7 @@
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>1000.0</value>
+            <value>500.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
@@ -240,7 +240,7 @@
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
             <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MTMzODEsImV4cCI6MTUxNjkxNDU4MSwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.fBgxKCnS14rMW1c6HLOZVcPdYVlluWrd0CKfdJQDTWegQe5YM0LSoTvKKE-StawxCQXWnKueOoWDmyqKE0X2kf_zt6xgLL2fvHTFYxyJdt5p11WqewaZjfmjZ3fgjPuTqPiKBd4cqmESuBXUaTVDqg0FE3A4uqBaVPT6U0Y__P93fqykOhnYieZ0b_3IbNOfOISfwZT67c1ntg1YvB4UiwXcvCwjXhZaVowQLh3ZUJUUayWqMP2JirV6sZNXRBdvyeYa_qGMcpU6QXBTc6dF1z9PPO5C0IzHXU2qIedp7V7eKu8HiuV6WCmEoUHSqu03c3uBbMUi9MOCGaH6aytfug</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MTU4NjAsImV4cCI6MTUxNjkxNzA2MCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.IfCehu5LkHAZux9_Cvq2r8316yXjaJZekfqD4YFB864wnVnqC_WmzjQ7PZ6E24g5vzHSvbf0rg8HaK8shEIqhy0cohDs0EGaOMWIWtOn4SN0H8xr6RDzyWq5W24S7-eWrAXYU-gKgkDib6FC1RoYNCSl9aoU6W3oU7Iws0ga_hsuxoK9yA_VThJMeG-9-bm4N0zlz28UrkdGEc8QgJ_BWH0PQqb397rqJBVKC5T-xRGK5wUjetFAs6AuJCMpyB7FcJpUqerq5OlpKfDITbnkpN3OPtch6FCykH0uKzSVwi01z4OqzDsOcbT_TjbJ91jHbE6savACxwHSWQuSJrcUEA</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
