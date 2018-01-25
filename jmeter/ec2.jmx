@@ -240,7 +240,7 @@
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
             <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MDMzNjgsImV4cCI6MTUxNjkwNDU2OCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.cgbJV4mJ1dz5xRkyOAkpe22pEXQjfQRyFQdWYSBw2Pe9mx7aUYy6MUu_j3034qnxzWvpZZ3ZqhaR4D7abS23VZZSSFDuhjzcIz2DWJRY9Zj4EXQoBB2203qycY9kQNMhcYLDQDv7Ea-p_NMsWO1lkz9ivZW-FgLsvfy8pjHTfEjmr0ABCHtg4m07PloGgHAO2ftvIVBNCa_85b5M1sPBn6YwacsYcUdTFB-rJ01KTYtxNgvW2cVP22I3H4a4RXDt21WNUQkcSyutCRJcfLCKIr7IYwW6Qm1ah6-coCUeBF0TgRlj66QJ1eeBIcuBvSvJ8_MuA4HlI6CpDU6Z3GXgJw</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MTIwMDAsImV4cCI6MTUxNjkxMzIwMCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.Yk8IwuZ_AeuQsmRrDzdN8nFZDZZV-qoKpchwtVsgX7q9nVcNq3B9VEjWWAD7UX1XhbrI_TW6bAQZss9oSsUTTlUw_0nDem0ozNGB0IqvGz96SE60UXxFU-HvzjylZMQHuueMUwlLg1p5sJ87cJJ2dieF-ZkEd3hOJ_4-2_8qaog762vRxaFaJcdd-yifpf5ct8EvI6k_glV1MexLYWbwq6_wbV-73La5YKcC6GTCZnGK-UK0qJqqhuTqXw6pf3a6DKizN6BoPU359ANRR66yA3__GVTrO1zsO41dummEKzriubRfKGbURUnnIYaeWJ20H9diTx_t2G3fCYzhXJwzOw</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
