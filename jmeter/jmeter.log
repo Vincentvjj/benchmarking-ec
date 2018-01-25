@@ -1,105 +1,347 @@
-2018-01-25 14:43:03,830 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
-2018-01-25 14:43:03,851 INFO o.a.j.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/3.3/libexec/bin/user.properties
-2018-01-25 14:43:03,852 INFO o.a.j.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/3.3/libexec/bin/system.properties
-2018-01-25 14:43:03,865 INFO o.a.j.JMeter: Copyright (c) 1998-2017 The Apache Software Foundation
-2018-01-25 14:43:03,865 INFO o.a.j.JMeter: Version 3.3 r1808647
-2018-01-25 14:43:03,865 INFO o.a.j.JMeter: java.version=1.8.0_151
-2018-01-25 14:43:03,865 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
-2018-01-25 14:43:03,866 INFO o.a.j.JMeter: os.name=Mac OS X
-2018-01-25 14:43:03,866 INFO o.a.j.JMeter: os.arch=x86_64
-2018-01-25 14:43:03,866 INFO o.a.j.JMeter: os.version=10.12.6
-2018-01-25 14:43:03,867 INFO o.a.j.JMeter: file.encoding=UTF-8
-2018-01-25 14:43:03,867 INFO o.a.j.JMeter: Max memory     =536870912
-2018-01-25 14:43:03,867 INFO o.a.j.JMeter: Available Processors =4
-2018-01-25 14:43:03,874 INFO o.a.j.JMeter: Default Locale=English (United States)
-2018-01-25 14:43:03,874 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
-2018-01-25 14:43:03,875 INFO o.a.j.JMeter: JMeterHome=/usr/local/Cellar/jmeter/3.3/libexec
-2018-01-25 14:43:03,875 INFO o.a.j.JMeter: user.dir  =/Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter
-2018-01-25 14:43:03,875 INFO o.a.j.JMeter: PWD       =/Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter
-2018-01-25 14:43:06,964 INFO o.a.j.JMeter: IP: 10.226.246.77 Name: vincentjonany FullName: 10.226.246.77
-2018-01-25 14:43:09,910 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: com.apple.laf.AquaLookAndFeel [Mac OS X, System]
-2018-01-25 14:43:09,932 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
-2018-01-25 14:43:11,314 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2018-01-25 14:43:11,314 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2018-01-25 14:43:13,244 INFO k.a.j.JMeterPluginsUtils: JMeter-Plugins.org v.1.4.0
-2018-01-25 14:43:13,983 WARN o.a.j.g.u.MenuFactory: Configuration error, probably corrupt or missing third party library(jar) ? Could not create class: kg.apc.jmeter.reporters.LoadosophiaUploaderGui. java.lang.NoClassDefFoundError: org/apache/commons/httpclient/methods/multipart/PartSource
-java.lang.NoClassDefFoundError: org/apache/commons/httpclient/methods/multipart/PartSource
-	at kg.apc.jmeter.reporters.LoadosophiaUploaderGui.init(LoadosophiaUploaderGui.java:114) ~[JMeterPlugins-Standard.jar:?]
-	at kg.apc.jmeter.reporters.LoadosophiaUploaderGui.<init>(LoadosophiaUploaderGui.java:28) ~[JMeterPlugins-Standard.jar:?]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_151]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_151]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_151]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_151]
-	at java.lang.Class.newInstance(Class.java:442) ~[?:1.8.0_151]
-	at org.apache.jmeter.gui.util.MenuFactory.initializeMenus(MenuFactory.java:505) ~[ApacheJMeter_core.jar:3.3 r1808647]
-	at org.apache.jmeter.gui.util.MenuFactory.<clinit>(MenuFactory.java:169) ~[ApacheJMeter_core.jar:3.3 r1808647]
-	at org.apache.jmeter.control.gui.TestPlanGui.createPopupMenu(TestPlanGui.java:93) ~[ApacheJMeter_core.jar:3.3 r1808647]
-	at org.apache.jmeter.gui.tree.JMeterTreeNode.createPopupMenu(JMeterTreeNode.java:156) ~[ApacheJMeter_core.jar:3.3 r1808647]
-	at org.apache.jmeter.gui.action.EditCommand.doAction(EditCommand.java:46) ~[ApacheJMeter_core.jar:3.3 r1808647]
-	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:80) ~[ApacheJMeter_core.jar:3.3 r1808647]
-	at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:65) ~[ApacheJMeter_core.jar:3.3 r1808647]
-	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311) [?:1.8.0_151]
-	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756) [?:1.8.0_151]
-	at java.awt.EventQueue.access$500(EventQueue.java:97) [?:1.8.0_151]
-	at java.awt.EventQueue$3.run(EventQueue.java:709) [?:1.8.0_151]
-	at java.awt.EventQueue$3.run(EventQueue.java:703) [?:1.8.0_151]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_151]
-	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80) [?:1.8.0_151]
-	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726) [?:1.8.0_151]
-	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201) [?:1.8.0_151]
-	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116) [?:1.8.0_151]
-	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105) [?:1.8.0_151]
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:1.8.0_151]
-	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93) [?:1.8.0_151]
-	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82) [?:1.8.0_151]
-Caused by: java.lang.ClassNotFoundException: org.apache.commons.httpclient.methods.multipart.PartSource
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[?:1.8.0_151]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_151]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_151]
-	... 28 more
-2018-01-25 14:43:14,634 INFO n.x.g.ConnectionSamplerUI: Initializing the UI.
-2018-01-25 14:43:14,650 INFO n.x.g.PubSamplerUI: Initializing the UI.
-2018-01-25 14:43:14,661 INFO n.x.g.SubSamplerUI: Initializing the UI.
-2018-01-25 14:43:14,667 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.assertions.BSFAssertion
-2018-01-25 14:43:14,805 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.extractor.BSFPostProcessor
-2018-01-25 14:43:14,840 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.modifiers.BSFPreProcessor
-2018-01-25 14:43:14,875 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2018-01-25 14:43:14,876 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2018-01-25 14:43:14,876 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2018-01-25 14:43:14,876 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2018-01-25 14:43:14,876 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2018-01-25 14:43:14,876 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2018-01-25 14:43:15,324 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
-2018-01-25 14:43:15,325 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /usr/local/Cellar/jmeter/3.3/libexec/bin/proxyserver.jks
-2018-01-25 14:43:15,558 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.protocol.java.sampler.BSFSampler
-2018-01-25 14:43:15,609 INFO o.a.j.s.FileServer: Default base='/Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter'
-2018-01-25 14:43:15,717 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.config.MongoSourceElement
-2018-01-25 14:43:15,717 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.sampler.MongoScriptSampler
-2018-01-25 14:43:15,862 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.timers.BSFTimer
-2018-01-25 14:43:15,888 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.visualizers.BSFListener
-2018-01-25 14:43:16,064 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2018-01-25 14:43:16,064 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
-2018-01-25 14:43:16,065 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2018-01-25 14:43:16,065 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2018-01-25 14:43:29,638 INFO o.a.j.g.a.Load: Loading file: /Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter/ec2.jmx
-2018-01-25 14:43:29,639 INFO o.a.j.s.FileServer: Set new base='/Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter'
-2018-01-25 14:43:29,850 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2018-01-25 14:43:29,882 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2018-01-25 14:43:29,883 INFO o.a.j.s.SaveService: Using SaveService properties version 3.2
-2018-01-25 14:43:29,887 INFO o.a.j.s.SaveService: Loading file: /Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter/ec2.jmx
-2018-01-25 14:43:29,986 INFO n.x.g.SubSamplerUI: Initializing the UI.
-2018-01-25 14:43:30,002 INFO n.x.g.ConnectionSamplerUI: Initializing the UI.
-2018-01-25 14:43:30,025 INFO n.x.g.PubSamplerUI: Initializing the UI.
-2018-01-25 14:43:30,165 INFO o.a.j.s.FileServer: Set new base='/Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter'
-2018-01-25 15:14:01,677 INFO o.a.j.g.a.Load: Loading file: /Users/vincentjoe/Downloads/MQTT Pub Sampler.jmx
-2018-01-25 15:14:01,678 INFO o.a.j.s.FileServer: Set new base='/Users/vincentjoe/Downloads'
-2018-01-25 15:14:01,678 INFO o.a.j.s.SaveService: Loading file: /Users/vincentjoe/Downloads/MQTT Pub Sampler.jmx
-2018-01-25 15:14:01,679 WARN o.a.j.g.a.Load: Error reading file. java.io.FileNotFoundException: /Users/vincentjoe/Downloads/MQTT Pub Sampler.jmx (No such file or directory)
-2018-01-25 15:14:05,364 INFO o.a.j.g.a.Load: Loading file: /Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter/MQTT Pub Sampler.jmx
-2018-01-25 15:14:05,364 INFO o.a.j.s.FileServer: Set new base='/Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter'
-2018-01-25 15:14:05,364 INFO o.a.j.s.SaveService: Loading file: /Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter/MQTT Pub Sampler.jmx
-2018-01-25 15:14:05,517 INFO o.a.j.s.FileServer: Set new base='/Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter'
-2018-01-25 15:14:29,630 INFO o.a.j.g.a.Load: Loading file: /Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter/ec2.jmx
-2018-01-25 15:14:29,630 INFO o.a.j.s.FileServer: Set new base='/Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter'
-2018-01-25 15:14:29,630 INFO o.a.j.s.SaveService: Loading file: /Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter/ec2.jmx
-2018-01-25 15:14:29,753 INFO o.a.j.s.FileServer: Set new base='/Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter'
+2018-01-25 21:55:42,275 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2018-01-25 21:55:42,287 INFO o.a.j.JMeter: Loading user properties from: /home/ec2-user/apache-jmeter-3.3/bin/user.properties
+2018-01-25 21:55:42,288 INFO o.a.j.JMeter: Loading system properties from: /home/ec2-user/apache-jmeter-3.3/bin/system.properties
+2018-01-25 21:55:42,293 INFO o.a.j.JMeter: Copyright (c) 1998-2017 The Apache Software Foundation
+2018-01-25 21:55:42,293 INFO o.a.j.JMeter: Version 3.3 r1808647
+2018-01-25 21:55:42,293 INFO o.a.j.JMeter: java.version=1.8.0_151
+2018-01-25 21:55:42,293 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2018-01-25 21:55:42,293 INFO o.a.j.JMeter: os.name=Linux
+2018-01-25 21:55:42,293 INFO o.a.j.JMeter: os.arch=amd64
+2018-01-25 21:55:42,293 INFO o.a.j.JMeter: os.version=4.9.76-3.78.amzn1.x86_64
+2018-01-25 21:55:42,293 INFO o.a.j.JMeter: file.encoding=UTF-8
+2018-01-25 21:55:42,293 INFO o.a.j.JMeter: Max memory     =536870912
+2018-01-25 21:55:42,293 INFO o.a.j.JMeter: Available Processors =2
+2018-01-25 21:55:42,298 INFO o.a.j.JMeter: Default Locale=English (United States)
+2018-01-25 21:55:42,299 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2018-01-25 21:55:42,299 INFO o.a.j.JMeter: JMeterHome=/home/ec2-user/apache-jmeter-3.3
+2018-01-25 21:55:42,299 INFO o.a.j.JMeter: user.dir  =/home/ec2-user/benchmarking-ec/jmeter
+2018-01-25 21:55:42,299 INFO o.a.j.JMeter: PWD       =/home/ec2-user/benchmarking-ec/jmeter
+2018-01-25 21:55:42,329 INFO o.a.j.JMeter: IP: 172.31.5.50 Name: ip-172-31-5-50 FullName: ip-172-31-5-50.us-west-2.compute.internal
+2018-01-25 21:55:42,331 INFO o.a.j.s.FileServer: Default base='/home/ec2-user/benchmarking-ec/jmeter'
+2018-01-25 21:55:42,331 INFO o.a.j.s.FileServer: Set new base='/home/ec2-user/benchmarking-ec/jmeter'
+2018-01-25 21:55:42,467 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2018-01-25 21:55:42,481 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2018-01-25 21:55:42,486 INFO o.a.j.s.SaveService: Using SaveService properties version 3.2
+2018-01-25 21:55:42,491 INFO o.a.j.s.SaveService: Loading file: ec2.jmx
+2018-01-25 21:55:42,578 INFO o.a.j.JMeter: Creating summariser <summary>
+2018-01-25 21:55:42,582 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2018-01-25 21:55:42,583 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-01-25 21:55:42,583 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2018-01-25 21:55:42,589 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2018-01-25 21:55:42,589 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2018-01-25 21:55:42,978 INFO o.a.j.JMeter: Running test (1516917342978)
+2018-01-25 21:55:43,012 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 10 sensors AWS
+2018-01-25 21:55:43,012 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group 10 sensors AWS.
+2018-01-25 21:55:43,012 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2018-01-25 21:55:43,013 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=1 perThread=100.0 delayedStart=false
+2018-01-25 21:55:43,018 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors AWS 1-1
+2018-01-25 21:55:43,024 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2018-01-25 21:55:43,024 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : 10 sensors Google
+2018-01-25 21:55:43,024 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group 10 sensors Google.
+2018-01-25 21:55:43,024 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2018-01-25 21:55:43,024 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=10 ramp-up=1 perThread=100.0 delayedStart=false
+2018-01-25 21:55:43,026 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,036 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors Google 2-1
+2018-01-25 21:55:43,041 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,048 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2018-01-25 21:55:43,048 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2018-01-25 21:55:43,118 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors AWS 1-2
+2018-01-25 21:55:43,119 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,135 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors Google 2-2
+2018-01-25 21:55:43,135 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,219 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors AWS 1-3
+2018-01-25 21:55:43,219 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,237 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors Google 2-3
+2018-01-25 21:55:43,237 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,319 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors AWS 1-4
+2018-01-25 21:55:43,320 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,340 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors Google 2-4
+2018-01-25 21:55:43,340 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,420 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors AWS 1-5
+2018-01-25 21:55:43,420 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,440 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors Google 2-5
+2018-01-25 21:55:43,440 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,520 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors AWS 1-6
+2018-01-25 21:55:43,521 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,547 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors Google 2-6
+2018-01-25 21:55:43,547 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,620 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors AWS 1-7
+2018-01-25 21:55:43,621 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,647 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors Google 2-7
+2018-01-25 21:55:43,648 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,692 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@38580735hawtdispatch-DEFAULT-2 is established successfully.
+2018-01-25 21:55:43,694 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2018-01-25 21:55:43,694 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2018-01-25 21:55:43,694 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2018-01-25 21:55:43,694 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2018-01-25 21:55:43,695 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@6ae16e3dhawtdispatch-DEFAULT-2 is established successfully.
+2018-01-25 21:55:43,695 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@9a02f0ahawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:43,721 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors AWS 1-8
+2018-01-25 21:55:43,721 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,748 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors Google 2-8
+2018-01-25 21:55:43,749 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,769 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@184044c3hawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:43,774 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@7a4b81ddhawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:43,784 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@721b39e1hawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:43,785 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@17ae1519hawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:43,785 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@d522d73hawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:43,800 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@2bb1106dhawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:43,819 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@67af3b16hawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:43,821 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors AWS 1-9
+2018-01-25 21:55:43,822 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,844 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@4dd3a1aahawtdispatch-DEFAULT-2 is established successfully.
+2018-01-25 21:55:43,848 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors Google 2-9
+2018-01-25 21:55:43,848 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,876 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@94026e1hawtdispatch-DEFAULT-2 is established successfully.
+2018-01-25 21:55:43,887 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:43,891 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:43,892 ERROR o.a.j.JMeter: Uncaught exception: 
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:43,893 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@7b8aab25hawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:43,920 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@2fa41521hawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:43,926 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors AWS 1-10
+2018-01-25 21:55:43,926 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,936 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@7290b2abhawtdispatch-DEFAULT-2 is established successfully.
+2018-01-25 21:55:43,948 INFO o.a.j.t.JMeterThread: Thread started: 10 sensors Google 2-10
+2018-01-25 21:55:43,949 INFO n.x.Util: Configured with dual SSL, trying to load key files.
+2018-01-25 21:55:43,977 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@314dfc48hawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:44,023 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@185ea696hawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:44,049 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@17dcb5a1hawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:44,112 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@492db4aehawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:44,192 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:44,192 ERROR o.a.j.JMeter: Uncaught exception: 
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:44,192 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:44,192 INFO n.x.s.ConnectionCallback: The connection org.fusesource.mqtt.client.CallbackConnection@535159dehawtdispatch-DEFAULT-1 is established successfully.
+2018-01-25 21:55:51,608 ERROR o.a.j.JMeter: Uncaught exception: 
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:51,621 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:55,265 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:55,266 ERROR o.a.j.JMeter: Uncaught exception: 
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:55,341 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:55,493 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:55,494 ERROR o.a.j.JMeter: Uncaught exception: 
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:55,505 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:55,505 ERROR o.a.j.JMeter: Uncaught exception: 
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:55,572 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:55,580 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:56,211 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:56,212 ERROR o.a.j.JMeter: Uncaught exception: 
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:55:56,310 ERROR n.x.s.PubCallback: Peer disconnected
+java.io.EOFException: Peer disconnected
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:331) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:56:00,003 INFO o.a.j.r.Summariser: summary +   2206 in 00:00:17 =  129.6/s Avg:    32 Min:     4 Max:   442 Err:     6 (0.27%) Active: 20 Started: 20 Finished: 0
+2018-01-25 21:56:30,002 INFO o.a.j.r.Summariser: summary +   3242 in 00:00:30 =  108.1/s Avg:    21 Min:     4 Max:   239 Err:     0 (0.00%) Active: 20 Started: 20 Finished: 0
+2018-01-25 21:56:30,002 INFO o.a.j.r.Summariser: summary =   5448 in 00:00:47 =  115.9/s Avg:    25 Min:     4 Max:   442 Err:     6 (0.11%)
+2018-01-25 21:57:00,002 INFO o.a.j.r.Summariser: summary +   3239 in 00:00:30 =  108.0/s Avg:    21 Min:     4 Max:   702 Err:     0 (0.00%) Active: 20 Started: 20 Finished: 0
+2018-01-25 21:57:00,002 INFO o.a.j.r.Summariser: summary =   8687 in 00:01:17 =  112.8/s Avg:    24 Min:     4 Max:   702 Err:     6 (0.07%)
+2018-01-25 21:57:26,487 ERROR n.x.s.PubCallback: Connection reset by peer
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[?:1.8.0_151]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[?:1.8.0_151]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_151]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_151]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_151]
+	at org.fusesource.hawtdispatch.transport.SslTransport.secure_read(SslTransport.java:350) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.access$100(SslTransport.java:41) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport$SSLChannel.read(SslTransport.java:107) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:326) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:57:26,488 ERROR o.a.j.JMeter: Uncaught exception: 
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[?:1.8.0_151]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[?:1.8.0_151]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_151]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_151]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_151]
+	at org.fusesource.hawtdispatch.transport.SslTransport.secure_read(SslTransport.java:350) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.access$100(SslTransport.java:41) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport$SSLChannel.read(SslTransport.java:107) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:326) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) [mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) [mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:57:26,558 ERROR n.x.s.PubCallback: Connection reset by peer
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method) ~[?:1.8.0_151]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39) ~[?:1.8.0_151]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_151]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_151]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_151]
+	at org.fusesource.hawtdispatch.transport.SslTransport.secure_read(SslTransport.java:350) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.access$100(SslTransport.java:41) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport$SSLChannel.read(SslTransport.java:107) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.AbstractProtocolCodec.read(AbstractProtocolCodec.java:326) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport.drainInbound(TcpTransport.java:710) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.SslTransport.drainInbound(SslTransport.java:276) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.transport.TcpTransport$6.run(TcpTransport.java:592) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.NioDispatchSource$3.run(NioDispatchSource.java:209) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.SerialDispatchQueue.run(SerialDispatchQueue.java:100) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+	at org.fusesource.hawtdispatch.internal.pool.SimpleThread.run(SimpleThread.java:77) ~[mqtt-xmeter-jar-with-dependencies.jar:?]
+2018-01-25 21:57:30,005 INFO o.a.j.r.Summariser: summary +   3215 in 00:00:30 =  107.2/s Avg:    21 Min:     4 Max:   646 Err:     1 (0.03%) Active: 20 Started: 20 Finished: 0
+2018-01-25 21:57:30,005 INFO o.a.j.r.Summariser: summary =  11902 in 00:01:47 =  111.2/s Avg:    23 Min:     4 Max:   702 Err:     7 (0.06%)
+2018-01-25 21:57:40,798 INFO o.a.j.r.ResultCollector: Shutdown hook started
+2018-01-25 21:57:40,799 INFO o.a.j.r.ResultCollector: Shutdown hook ended
