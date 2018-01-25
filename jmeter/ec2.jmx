@@ -106,8 +106,8 @@
         </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 Sensors connected to AWS" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/client.p12</stringProp>
+            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/aws/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/aws/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -222,8 +222,8 @@
         </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 Sensors connected to Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/client.p12</stringProp>
+            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
