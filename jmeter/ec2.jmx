@@ -27,8 +27,8 @@
       </ThreadGroup>
       <hashTree>
         <net.xmeter.samplers.SubSampler guiclass="net.xmeter.gui.SubSamplerUI" testclass="net.xmeter.samplers.SubSampler" testname="MQTT Sub Sampler" enabled="false">
-          <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/emqtt.jks</stringProp>
-          <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/client.p12</stringProp>
+          <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/emqtt.jks</stringProp>
+          <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/client.p12</stringProp>
           <stringProp name="mqtt.conn_keep_alive">300</stringProp>
           <stringProp name="mqtt.conn_attampt_max">0</stringProp>
           <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -240,7 +240,7 @@
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
             <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY3OTY1ODIsImV4cCI6MTUxNjc5Nzc4MiwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.iBGTlq63PZQx4Von4suQYpL0sRTfRRjneA7aYZxsMUDoh-LXWm8AwdhhRBEL6SqgvC_GXY8cDGQD7Bq_ZkQ87YdFfp9WhM1yULLExCSgfNk_lGfek4lZ7LZk3UgLtsi8NM6RFu6eajyGKNP8V0hVjsffK4_QhWoTkwcN-WFPKMTeBMTKgo065hgqOBKDU-wduADHU-sjzq-Z_P-msEbAb4TvF5hPk4nzuKdKqlARkSuRdWokMkNpTEXaD6B-WNMucZSHjvI7p_fkiMscIyAmjXons7U8nu6Cij0vUFy41M1zcl14fUNo8STTueyEjv1kgeewZfcyhiDYd7LkrVyVvQ</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MDMzNjgsImV4cCI6MTUxNjkwNDU2OCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.cgbJV4mJ1dz5xRkyOAkpe22pEXQjfQRyFQdWYSBw2Pe9mx7aUYy6MUu_j3034qnxzWvpZZ3ZqhaR4D7abS23VZZSSFDuhjzcIz2DWJRY9Zj4EXQoBB2203qycY9kQNMhcYLDQDv7Ea-p_NMsWO1lkz9ivZW-FgLsvfy8pjHTfEjmr0ABCHtg4m07PloGgHAO2ftvIVBNCa_85b5M1sPBn6YwacsYcUdTFB-rJ01KTYtxNgvW2cVP22I3H4a4RXDt21WNUQkcSyutCRJcfLCKIr7IYwW6Qm1ah6-coCUeBF0TgRlj66QJ1eeBIcuBvSvJ8_MuA4HlI6CpDU6Z3GXgJw</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
