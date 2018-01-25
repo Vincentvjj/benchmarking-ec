@@ -8,7 +8,7 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <stringProp name="TestPlan.user_define_classpath">/Users/vincentjoe/Downloads/joda-time-2.1.jar,/Users/vincentjoe/Downloads/jjwt-0.7.0.jar</stringProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Listening Group" enabled="false">
@@ -27,8 +27,8 @@
       </ThreadGroup>
       <hashTree>
         <net.xmeter.samplers.SubSampler guiclass="net.xmeter.gui.SubSamplerUI" testclass="net.xmeter.samplers.SubSampler" testname="MQTT Sub Sampler" enabled="false">
-          <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/emqtt.jks</stringProp>
-          <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/client.p12</stringProp>
+          <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/emqtt.jks</stringProp>
+          <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/client.p12</stringProp>
           <stringProp name="mqtt.conn_keep_alive">300</stringProp>
           <stringProp name="mqtt.conn_attampt_max">0</stringProp>
           <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -55,8 +55,8 @@
         </net.xmeter.samplers.SubSampler>
         <hashTree/>
         <net.xmeter.samplers.ConnectionSampler guiclass="net.xmeter.gui.ConnectionSamplerUI" testclass="net.xmeter.samplers.ConnectionSampler" testname="MQTT Connection Sampler" enabled="true">
-          <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/umar/emqtt.jks</stringProp>
-          <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/umar/client.p12</stringProp>
+          <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/emqtt.jks</stringProp>
+          <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/client.p12</stringProp>
           <stringProp name="mqtt.conn_keep_alive">300</stringProp>
           <stringProp name="mqtt.conn_attampt_max">0</stringProp>
           <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -77,13 +77,13 @@
         </net.xmeter.samplers.ConnectionSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A thread group of 5 sensors for AWS" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="10 sensors AWS" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
@@ -96,18 +96,18 @@
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>500000.0</value>
+            <value>1000.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
         <hashTree/>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 60s" enabled="true">
-          <stringProp name="RunTime.seconds">60</stringProp>
+        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 120s" enabled="true">
+          <stringProp name="RunTime.seconds">120</stringProp>
         </RunTime>
         <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 Sensors connected to AWS" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/client.p12</stringProp>
+          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="10 sensors AWS" enabled="true">
+            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/aws/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/aws/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -193,13 +193,13 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A thread group of 5 sensors for Google" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="10 sensors Google" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
@@ -212,18 +212,18 @@
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>500000.0</value>
+            <value>1000.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
         <hashTree/>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 60s" enabled="true">
-          <stringProp name="RunTime.seconds">60</stringProp>
+        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 120s" enabled="true">
+          <stringProp name="RunTime.seconds">120</stringProp>
         </RunTime>
         <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 Sensors connected to Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/umar/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/umar/client.p12</stringProp>
+          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="10 sensors Google" enabled="true">
+            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -239,8 +239,8 @@
             <stringProp name="mqtt.protocol">SSL</stringProp>
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
-            <stringProp name="mqtt.user_name">projects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MjE3NTIsImV4cCI6MTUxNjkyMjk1MiwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.0-ykc9G6fc897AIFvTxsvAWE9z1IPFoYFswUAXqcFz24neLxqr3J8el8EaQQ8PX4dgHBHgorh3eKqr34nxwFRv3rDiI44n663RRqpZSs3MzdfDJA8A-ozW_0nKnh4Sg8w0bz7gXdxTs1I6fBGPN9Ct14Nvi2qYQfIQkhgVLZcH3zvwKCr2Gy-IJYXpOo15leSnBajC1GgtGfVK7xDEPjkm7IVLHh7jZ6RroGtcHxvgY7P-cmdK6M2bmlyGogHnjY0RUFFfaB730dj0FSKA-aPbAcXQNCTZeqabfniAR1zTlxvje-H6r0ZC9WjBIz1VptfTcjMqA6NyWtdFeb_NdDwQ</stringProp>
+            <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MjA5MzAsImV4cCI6MTUxNjkyMjEzMCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.FM2ikkN4QdLTdYqsPiI8aRMSiIrnW19fGQKAtkIkuO68wcR5RgIYXIdZMK9-kTStbgvtmfnd3VkGMEepMZDzc7cicXL3OPHqiA6bkE0TtHb7ZLKZD-7s2vH4_xr6G6awlELgVUwXAOm8qmxal4_mGjDQ3LYBaAgt3URbhUkgruzXfpuiAM--mFJrjYVOqp6oO2EULYd6SUdpAqr65LxWhwllv_P3pjxY2z8KFQSYBiJjQJphDXUIntTV0VE3MTXxshSLTYVtLTakUjwvXZAgPyDw1c3SCsddSZcOcgHbaVTRaSUCy_eIPSvv694q-8aNBCH0jmbWbxZMykLg2p-jwg</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
@@ -284,7 +284,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/throughput.csv</stringProp>
         <longProp name="interval_grouping">1000</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
@@ -328,8 +328,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
-        <boolProp name="useGroupName">true</boolProp>
+        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/agg.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="false">
@@ -428,52 +427,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename"></stringProp>
-        <longProp name="interval_grouping">500</longProp>
-        <boolProp name="graph_aggregated">false</boolProp>
-        <stringProp name="include_sample_labels"></stringProp>
-        <stringProp name="exclude_sample_labels"></stringProp>
-        <stringProp name="start_offset"></stringProp>
-        <stringProp name="end_offset"></stringProp>
-        <boolProp name="include_checkbox_state">false</boolProp>
-        <boolProp name="exclude_checkbox_state">false</boolProp>
-      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
-      <hashTree/>
-      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ThroughputVsThreadsGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Transaction Throughput vs Threads" enabled="true">
-        <boolProp name="ResultCollector.error_logging">false</boolProp>
-        <objProp>
-          <name>saveConfig</name>
-          <value class="SampleSaveConfiguration">
-            <time>true</time>
-            <latency>true</latency>
-            <timestamp>true</timestamp>
-            <success>true</success>
-            <label>true</label>
-            <code>true</code>
-            <message>true</message>
-            <threadName>true</threadName>
-            <dataType>true</dataType>
-            <encoding>false</encoding>
-            <assertions>true</assertions>
-            <subresults>true</subresults>
-            <responseData>true</responseData>
-            <samplerData>true</samplerData>
-            <xml>true</xml>
-            <fieldNames>true</fieldNames>
-            <responseHeaders>true</responseHeaders>
-            <requestHeaders>true</requestHeaders>
-            <responseDataOnError>false</responseDataOnError>
-            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-            <assertionsResultsToSave>0</assertionsResultsToSave>
-            <bytes>true</bytes>
-            <sentBytes>true</sentBytes>
-            <url>true</url>
-            <threadCounts>true</threadCounts>
-            <idleTime>true</idleTime>
-            <connectTime>true</connectTime>
-          </value>
-        </objProp>
-        <stringProp name="filename"></stringProp>
+        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/latency.csv</stringProp>
         <longProp name="interval_grouping">500</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>

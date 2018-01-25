@@ -73,17 +73,17 @@
           <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
           <stringProp name="mqtt.version">3.1.1</stringProp>
           <stringProp name="mqtt.user_name">projects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-          <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY3OTQ3MTMsImV4cCI6MTUxNjc5NTkxMywiYXVkIjoiZWNpb3QtMTkxNjEyIn0.gZFP0rIGUIOZLlX6PQyK2gur7eFx1DpFxqLp_2jNKsxJZ4uqEe3ksIOzJ34SC4nwUmrpegfKtp-WZdt7Jo7qJMWMghzpa9ZzDWhpQkERO59lz01D229iSgIpnAC6ch9zVFN4zU5JzGa8N033rcvGUTSNVqancEuR3Bey-z19cO5BwuOdqaQ0rP9D8bI5wd4fF524d_PShF2f5orDsvuDnIuKMl0G-yrVnRFo-_IoTrQv1RrB-t2OmbXl49mEP2JAYVZ9AL66yajqF44LnS1pWpqp9hGBpF7TRsodO7CACK8xbEUWu9RyB9piGo0w11SW602XARwBP_wg7jRB69harQ</stringProp>
+          <stringProp name="mqtt.password">eeyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MjI3MTksImV4cCI6MTUxNjkyMzkxOSwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.hwVNGmMbnO5eKpaYor7c2uugJVZ1ZpAs0IpXrZ2Od_5ZhfOsuPxtGleIfEo1r4yNO6wz9VO76uCQYFuZPBmpXqWzpsr8Pma-TMQoP1PziGUcvnrZCuLWI4SlKwLWZ55hekCf1w-ZyMGJjK2VmWPXlYUHX2RsDnnOl0dagAbz030zEwWNbqC60_UO3KMFrZo3DLb-rYCCs4bzmKfwEKdKsoXi3iQ90XTSfpn4ocCj0KL6vdJvXNNRa9UVajVn2MB6jOizQ8JW6KZ3tJcrPfdse6UiFwcYWzHhf0vjzIiE_ronUVRFnIGG0-1RrBo1VgsNJQXxyHH5iIqMCl81o3ihrQ</stringProp>
         </net.xmeter.samplers.ConnectionSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="100 sensors AWS" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="1 sensors AWS" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
@@ -96,7 +96,7 @@
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>100.0</value>
+            <value>10000.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
@@ -105,7 +105,7 @@
           <stringProp name="RunTime.seconds">120</stringProp>
         </RunTime>
         <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="100 sensors AWS" enabled="true">
+          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 sensors AWS" enabled="true">
             <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/aws/emqtt.jks</stringProp>
             <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/aws/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
@@ -193,13 +193,13 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="100 sensors Google" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="1 sensors Google" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
@@ -212,7 +212,7 @@
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>100.0</value>
+            <value>10000.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
@@ -221,7 +221,7 @@
           <stringProp name="RunTime.seconds">120</stringProp>
         </RunTime>
         <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="100 sensors Google" enabled="true">
+          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 sensors Google" enabled="true">
             <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
             <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
