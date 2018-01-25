@@ -77,13 +77,13 @@
         </net.xmeter.samplers.ConnectionSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A thread group of 5 sensors for AWS" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="10 sensors AWS" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
@@ -96,16 +96,16 @@
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>10000.0</value>
+            <value>1000.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
         <hashTree/>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 60s" enabled="true">
-          <stringProp name="RunTime.seconds">60</stringProp>
+        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 120s" enabled="true">
+          <stringProp name="RunTime.seconds">120</stringProp>
         </RunTime>
         <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 Sensors connected to AWS" enabled="true">
+          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="10 Sensors connected to AWS" enabled="true">
             <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/aws/emqtt.jks</stringProp>
             <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/aws/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
@@ -193,13 +193,13 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A thread group of 5 sensors for Google" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="10 sensors Google" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
@@ -212,16 +212,16 @@
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>10000.0</value>
+            <value>1000.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
         <hashTree/>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 60s" enabled="true">
-          <stringProp name="RunTime.seconds">60</stringProp>
+        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 120s" enabled="true">
+          <stringProp name="RunTime.seconds">120</stringProp>
         </RunTime>
         <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 Sensors connected to Google" enabled="true">
+          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="10 Sensors connected to Google" enabled="true">
             <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
             <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
@@ -284,7 +284,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/throuhgput.csv</stringProp>
+        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/throuhgput.csv</stringProp>
         <longProp name="interval_grouping">1000</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
@@ -328,7 +328,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/agg.csv</stringProp>
+        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/agg.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="false">
@@ -427,7 +427,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/latency.csv</stringProp>
+        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/latency.csv</stringProp>
         <longProp name="interval_grouping">500</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
