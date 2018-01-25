@@ -77,13 +77,13 @@
         </net.xmeter.samplers.ConnectionSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="10 sensors AWS" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="100 sensors AWS" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
@@ -96,7 +96,7 @@
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>500.0</value>
+            <value>100.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
@@ -105,7 +105,7 @@
           <stringProp name="RunTime.seconds">120</stringProp>
         </RunTime>
         <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="10 Sensors connected to AWS" enabled="true">
+          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="100 sensors AWS" enabled="true">
             <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/aws/emqtt.jks</stringProp>
             <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/aws/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
@@ -193,7 +193,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="10 sensors Google" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="100 sensors Google" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -212,7 +212,7 @@
           <intProp name="calcMode">0</intProp>
           <doubleProp>
             <name>throughput</name>
-            <value>500.0</value>
+            <value>100.0</value>
             <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
@@ -221,7 +221,7 @@
           <stringProp name="RunTime.seconds">120</stringProp>
         </RunTime>
         <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="10 Sensors connected to Google" enabled="true">
+          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="100 sensors Google" enabled="true">
             <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
             <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
@@ -240,7 +240,7 @@
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
             <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MTU4NjAsImV4cCI6MTUxNjkxNzA2MCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.IfCehu5LkHAZux9_Cvq2r8316yXjaJZekfqD4YFB864wnVnqC_WmzjQ7PZ6E24g5vzHSvbf0rg8HaK8shEIqhy0cohDs0EGaOMWIWtOn4SN0H8xr6RDzyWq5W24S7-eWrAXYU-gKgkDib6FC1RoYNCSl9aoU6W3oU7Iws0ga_hsuxoK9yA_VThJMeG-9-bm4N0zlz28UrkdGEc8QgJ_BWH0PQqb397rqJBVKC5T-xRGK5wUjetFAs6AuJCMpyB7FcJpUqerq5OlpKfDITbnkpN3OPtch6FCykH0uKzSVwi01z4OqzDsOcbT_TjbJ91jHbE6savACxwHSWQuSJrcUEA</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MjA5MzAsImV4cCI6MTUxNjkyMjEzMCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.FM2ikkN4QdLTdYqsPiI8aRMSiIrnW19fGQKAtkIkuO68wcR5RgIYXIdZMK9-kTStbgvtmfnd3VkGMEepMZDzc7cicXL3OPHqiA6bkE0TtHb7ZLKZD-7s2vH4_xr6G6awlELgVUwXAOm8qmxal4_mGjDQ3LYBaAgt3URbhUkgruzXfpuiAM--mFJrjYVOqp6oO2EULYd6SUdpAqr65LxWhwllv_P3pjxY2z8KFQSYBiJjQJphDXUIntTV0VE3MTXxshSLTYVtLTakUjwvXZAgPyDw1c3SCsddSZcOcgHbaVTRaSUCy_eIPSvv694q-8aNBCH0jmbWbxZMykLg2p-jwg</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
