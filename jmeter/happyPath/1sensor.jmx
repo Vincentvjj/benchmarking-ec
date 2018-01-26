@@ -8,7 +8,7 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <stringProp name="TestPlan.user_define_classpath">/Users/vincentjoe/Downloads/joda-time-2.1.jar,/Users/vincentjoe/Downloads/jjwt-0.7.0.jar</stringProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Listening Group" enabled="false">
@@ -27,8 +27,8 @@
       </ThreadGroup>
       <hashTree>
         <net.xmeter.samplers.SubSampler guiclass="net.xmeter.gui.SubSamplerUI" testclass="net.xmeter.samplers.SubSampler" testname="MQTT Sub Sampler" enabled="false">
-          <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/emqtt.jks</stringProp>
-          <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/client.p12</stringProp>
+          <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/emqtt.jks</stringProp>
+          <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/client.p12</stringProp>
           <stringProp name="mqtt.conn_keep_alive">300</stringProp>
           <stringProp name="mqtt.conn_attampt_max">0</stringProp>
           <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -55,8 +55,8 @@
         </net.xmeter.samplers.SubSampler>
         <hashTree/>
         <net.xmeter.samplers.ConnectionSampler guiclass="net.xmeter.gui.ConnectionSamplerUI" testclass="net.xmeter.samplers.ConnectionSampler" testname="MQTT Connection Sampler" enabled="true">
-          <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/umar/emqtt.jks</stringProp>
-          <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/umar/client.p12</stringProp>
+          <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/emqtt.jks</stringProp>
+          <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/client.p12</stringProp>
           <stringProp name="mqtt.conn_keep_alive">300</stringProp>
           <stringProp name="mqtt.conn_attampt_max">0</stringProp>
           <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -73,17 +73,17 @@
           <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
           <stringProp name="mqtt.version">3.1.1</stringProp>
           <stringProp name="mqtt.user_name">projects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-          <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY3OTQ3MTMsImV4cCI6MTUxNjc5NTkxMywiYXVkIjoiZWNpb3QtMTkxNjEyIn0.gZFP0rIGUIOZLlX6PQyK2gur7eFx1DpFxqLp_2jNKsxJZ4uqEe3ksIOzJ34SC4nwUmrpegfKtp-WZdt7Jo7qJMWMghzpa9ZzDWhpQkERO59lz01D229iSgIpnAC6ch9zVFN4zU5JzGa8N033rcvGUTSNVqancEuR3Bey-z19cO5BwuOdqaQ0rP9D8bI5wd4fF524d_PShF2f5orDsvuDnIuKMl0G-yrVnRFo-_IoTrQv1RrB-t2OmbXl49mEP2JAYVZ9AL66yajqF44LnS1pWpqp9hGBpF7TRsodO7CACK8xbEUWu9RyB9piGo0w11SW602XARwBP_wg7jRB69harQ</stringProp>
+          <stringProp name="mqtt.password">eeyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MjI3MTksImV4cCI6MTUxNjkyMzkxOSwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.hwVNGmMbnO5eKpaYor7c2uugJVZ1ZpAs0IpXrZ2Od_5ZhfOsuPxtGleIfEo1r4yNO6wz9VO76uCQYFuZPBmpXqWzpsr8Pma-TMQoP1PziGUcvnrZCuLWI4SlKwLWZ55hekCf1w-ZyMGJjK2VmWPXlYUHX2RsDnnOl0dagAbz030zEwWNbqC60_UO3KMFrZo3DLb-rYCCs4bzmKfwEKdKsoXi3iQ90XTSfpn4ocCj0KL6vdJvXNNRa9UVajVn2MB6jOizQ8JW6KZ3tJcrPfdse6UiFwcYWzHhf0vjzIiE_ronUVRFnIGG0-1RrBo1VgsNJQXxyHH5iIqMCl81o3ihrQ</stringProp>
         </net.xmeter.samplers.ConnectionSampler>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A thread group of 5 sensors for AWS" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="1 sensors AWS" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1516358589000</longProp>
         <longProp name="ThreadGroup.end_time">1516358589000</longProp>
@@ -101,13 +101,13 @@
           </doubleProp>
         </ConstantThroughputTimer>
         <hashTree/>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 60s" enabled="true">
-          <stringProp name="RunTime.seconds">60</stringProp>
+        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 120s" enabled="true">
+          <stringProp name="RunTime.seconds">120</stringProp>
         </RunTime>
         <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 Sensors connected to AWS" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/client.p12</stringProp>
+          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 sensors AWS" enabled="true">
+            <stringProp name="mqtt.keystore_file_path">../../keys/aws/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">../../keys/aws/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -193,7 +193,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A thread group of 1 sensors for Google" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="1 sensors Google" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -217,13 +217,13 @@
           </doubleProp>
         </ConstantThroughputTimer>
         <hashTree/>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 60s" enabled="true">
-          <stringProp name="RunTime.seconds">60</stringProp>
+        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 120s" enabled="true">
+          <stringProp name="RunTime.seconds">120</stringProp>
         </RunTime>
         <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 Sensor connected to Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/umar/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/umar/client.p12</stringProp>
+          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 sensors Google" enabled="true">
+            <stringProp name="mqtt.keystore_file_path">../../keys/google/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">../../keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -239,241 +239,9 @@
             <stringProp name="mqtt.protocol">SSL</stringProp>
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
-            <stringProp name="mqtt.user_name">projects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5NjU0ODAsImV4cCI6MTUxNjk2NjY4MCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.VrVT5g16xLYhLrBMa_RJvwvOoKc7GIhBj8W0MLBiDmBxQHSkhC1i7x0FyXv-UxD5Pev3k570SKI26OHisIveP6niLY8W0zfk6-wSxrWR1M2NANHpSi1ZPIbmIXRmqiOHPP8AME5uK98IpNOQWTEPmrTRIQOiTa6mdagf2eflwUrUzGgTgt2AFNCtSlR_b1dTw1pkZr3CLkBV9rOqd8W_1rwZ4fAsAI0YhJ2kjyP8v5U3r6lEksFGldtYs4qVZAd_LUB4nZhhJ3kjWvvAmdYtuAqnlghH7Q32RtE6a3aRE9-lXu6WpIwVUBXZEAABcBttcDb-nHL1A_goSivDo0eS2g</stringProp>
+            <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5ODQxODUsImV4cCI6MTUxNjk4NTM4NSwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.dOQ8jgcT4_PwWeOQju0Y2kelvSyYy7y4LEvDvrr3aHOCwq5i46eCQ1C-mmip1JFKA988EhTRsHTcRGmTnmXUTnl5FhlJvzdFwPTQc1f3hEI_FBOqUg-WZZ_ca7GHaI0jI5GHCkZpTE5sKROGge4210UzbaWq0lULs1AFoSHG95nn0Nfa3PtE5ow9VtyLRErnkvsV33SZGC06OfpDPAfS6VWm1Ym65u2Q6QMkoQrjYdM7NGMr2Dd4Qqf7NHimBcHpMe_BoyWOccqByeN6z6xxs5imYNkH_RTqBW3awu7U3dHRZC0jLdvDqnDS9qIb_Wy4tvDN-bKQ0ZXarpz1A3M8DA</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac/events</stringProp>
-            <stringProp name="mqtt.qos_level">1</stringProp>
-            <boolProp name="mqtt.add_timestamp">false</boolProp>
-            <stringProp name="mqtt.message_type">String</stringProp>
-            <stringProp name="mqtt.message_type_fixed_length">1024</stringProp>
-            <stringProp name="mqtt.message_to_sent"></stringProp>
-          </net.xmeter.samplers.PubSampler>
-          <hashTree/>
-        </hashTree>
-      </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A thread group of 1 sensors for Google" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
-        </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <longProp name="ThreadGroup.start_time">1516358589000</longProp>
-        <longProp name="ThreadGroup.end_time">1516358589000</longProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"></stringProp>
-        <stringProp name="ThreadGroup.delay"></stringProp>
-      </ThreadGroup>
-      <hashTree>
-        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
-          <intProp name="calcMode">0</intProp>
-          <doubleProp>
-            <name>throughput</name>
-            <value>10000.0</value>
-            <savedValue>0.0</savedValue>
-          </doubleProp>
-        </ConstantThroughputTimer>
-        <hashTree/>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 60s" enabled="true">
-          <stringProp name="RunTime.seconds">60</stringProp>
-        </RunTime>
-        <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 Sensor connected to Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/umar/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/umar/client.p12</stringProp>
-            <stringProp name="mqtt.conn_keep_alive">300</stringProp>
-            <stringProp name="mqtt.conn_attampt_max">0</stringProp>
-            <stringProp name="mqtt.keep_time">1800</stringProp>
-            <stringProp name="mqtt.client_id_prefix">projects/eciot-191612/locations/us-central1/registries/test/devices/mac1</stringProp>
-            <boolProp name="mqtt.conn_share">false</boolProp>
-            <boolProp name="mqtt.client_id_suffix">false</boolProp>
-            <stringProp name="mqtt.reconn_attampt_max">0</stringProp>
-            <stringProp name="mqtt.conn_timeout">10</stringProp>
-            <boolProp name="mqtt.dual_ssl_authentication">true</boolProp>
-            <stringProp name="mqtt.keystore_password">password</stringProp>
-            <stringProp name="mqtt.clientcert_password">password</stringProp>
-            <stringProp name="mqtt.port">8883</stringProp>
-            <stringProp name="mqtt.protocol">SSL</stringProp>
-            <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
-            <stringProp name="mqtt.version">3.1.1</stringProp>
-            <stringProp name="mqtt.user_name">projects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5NjU1MDQsImV4cCI6MTUxNjk2NjcwNCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.dAS_tFvfWsVecPXgeGqBYQ6qHPm8XoNIJ62a_Q5YiEWYJwypqMVj_IFmYFNOGjZP5E91hAWgIwxHCR8BT-JFs17NeHTmqEggpUGN4u0tZwk2-UcEJf1yzeiZZhEGD4Nf3kbf_C4y9f_WgKn4_4pUJQK6cVidTIlk6iNBxsG1t0Shcg5AV4_djuud2gUcpWzarfqw6o-GVu-l8bdWTqgnLRY3Z0KueaZinrPYNhU60u1ves34mAXSVrPwBTJHxvF_9aqMD9AIYaHnVxQ_27UyyUoxW1qfKEbHohkHETGO_Mhh2OF09DWiDGENQPMQbMjomE9KRiId4Jw86mTO9nGHlw</stringProp>
-            <stringProp name="mqtt.topic_name">/devices/mac1/events</stringProp>
-            <stringProp name="mqtt.qos_level">1</stringProp>
-            <boolProp name="mqtt.add_timestamp">false</boolProp>
-            <stringProp name="mqtt.message_type">String</stringProp>
-            <stringProp name="mqtt.message_type_fixed_length">1024</stringProp>
-            <stringProp name="mqtt.message_to_sent"></stringProp>
-          </net.xmeter.samplers.PubSampler>
-          <hashTree/>
-        </hashTree>
-      </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A thread group of 1 sensors for Google" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
-        </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <longProp name="ThreadGroup.start_time">1516358589000</longProp>
-        <longProp name="ThreadGroup.end_time">1516358589000</longProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"></stringProp>
-        <stringProp name="ThreadGroup.delay"></stringProp>
-      </ThreadGroup>
-      <hashTree>
-        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
-          <intProp name="calcMode">0</intProp>
-          <doubleProp>
-            <name>throughput</name>
-            <value>10000.0</value>
-            <savedValue>0.0</savedValue>
-          </doubleProp>
-        </ConstantThroughputTimer>
-        <hashTree/>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 60s" enabled="true">
-          <stringProp name="RunTime.seconds">60</stringProp>
-        </RunTime>
-        <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 Sensor connected to Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/umar/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/umar/client.p12</stringProp>
-            <stringProp name="mqtt.conn_keep_alive">300</stringProp>
-            <stringProp name="mqtt.conn_attampt_max">0</stringProp>
-            <stringProp name="mqtt.keep_time">1800</stringProp>
-            <stringProp name="mqtt.client_id_prefix">projects/eciot-191612/locations/us-central1/registries/test/devices/mac2</stringProp>
-            <boolProp name="mqtt.conn_share">false</boolProp>
-            <boolProp name="mqtt.client_id_suffix">false</boolProp>
-            <stringProp name="mqtt.reconn_attampt_max">0</stringProp>
-            <stringProp name="mqtt.conn_timeout">10</stringProp>
-            <boolProp name="mqtt.dual_ssl_authentication">true</boolProp>
-            <stringProp name="mqtt.keystore_password">password</stringProp>
-            <stringProp name="mqtt.clientcert_password">password</stringProp>
-            <stringProp name="mqtt.port">8883</stringProp>
-            <stringProp name="mqtt.protocol">SSL</stringProp>
-            <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
-            <stringProp name="mqtt.version">3.1.1</stringProp>
-            <stringProp name="mqtt.user_name">projects/eciot-191612/locations/us-central1/registries/test/devices/mac1</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5NjU1MjgsImV4cCI6MTUxNjk2NjcyOCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.FXnY4YYT5xqdGcXJbmiPJU-u9Eq3LunPK7zdqMzkFjXhu9kUsmVbIiByHILWIjFuEqklreSAdsxaW7sFCy6s-RiYweErlqEr3l34CnDVVydLDdvXiiABeweLcLWcbBpfdMXJlybXl2IEJ2rPoXB7OL3pz6Xe7wXc01rfCq6IJLynsUhtdGnlKdKLWOrOyMht5iym750EKJ4729KCN_K22ls940FE_hNRQPz7HckbNjMcB0g77jj-42bYEc3U5zGQIhbzvViT9Q4A7DhHlPm3uhR6wli7EwKJz2alm81x29AMyMKg0M9sXIAQ0QVJv6N4XTEz8H8SitlzYHybcMZtRg</stringProp>
-            <stringProp name="mqtt.topic_name">/devices/mac2/events</stringProp>
-            <stringProp name="mqtt.qos_level">1</stringProp>
-            <boolProp name="mqtt.add_timestamp">false</boolProp>
-            <stringProp name="mqtt.message_type">String</stringProp>
-            <stringProp name="mqtt.message_type_fixed_length">1024</stringProp>
-            <stringProp name="mqtt.message_to_sent"></stringProp>
-          </net.xmeter.samplers.PubSampler>
-          <hashTree/>
-        </hashTree>
-      </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A thread group of 1 sensors for Google" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
-        </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <longProp name="ThreadGroup.start_time">1516358589000</longProp>
-        <longProp name="ThreadGroup.end_time">1516358589000</longProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"></stringProp>
-        <stringProp name="ThreadGroup.delay"></stringProp>
-      </ThreadGroup>
-      <hashTree>
-        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
-          <intProp name="calcMode">0</intProp>
-          <doubleProp>
-            <name>throughput</name>
-            <value>10000.0</value>
-            <savedValue>0.0</savedValue>
-          </doubleProp>
-        </ConstantThroughputTimer>
-        <hashTree/>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 60s" enabled="true">
-          <stringProp name="RunTime.seconds">60</stringProp>
-        </RunTime>
-        <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 Sensor connected to Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/umar/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/umar/client.p12</stringProp>
-            <stringProp name="mqtt.conn_keep_alive">300</stringProp>
-            <stringProp name="mqtt.conn_attampt_max">0</stringProp>
-            <stringProp name="mqtt.keep_time">1800</stringProp>
-            <stringProp name="mqtt.client_id_prefix">projects/eciot-191612/locations/us-central1/registries/test/devices/mac3</stringProp>
-            <boolProp name="mqtt.conn_share">false</boolProp>
-            <boolProp name="mqtt.client_id_suffix">false</boolProp>
-            <stringProp name="mqtt.reconn_attampt_max">0</stringProp>
-            <stringProp name="mqtt.conn_timeout">10</stringProp>
-            <boolProp name="mqtt.dual_ssl_authentication">true</boolProp>
-            <stringProp name="mqtt.keystore_password">password</stringProp>
-            <stringProp name="mqtt.clientcert_password">password</stringProp>
-            <stringProp name="mqtt.port">8883</stringProp>
-            <stringProp name="mqtt.protocol">SSL</stringProp>
-            <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
-            <stringProp name="mqtt.version">3.1.1</stringProp>
-            <stringProp name="mqtt.user_name">projects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5NjU1NDgsImV4cCI6MTUxNjk2Njc0OCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.ivudeW0GQWRWJ-8m5oJfe9xl1v8fkmoeaeb6o7ZQ9ZGkEs7_9upD-CVg088nZPiiYqIxV7TuHwZKgWyY_uArMjcZ98hR_jvrSUqaxvWKy3ZSgtuZgb3QgLqzTSlgF3RA8EX8xM_zdwMIVujW1pDCqRtJw0BFHNUO95RuuSGwVQ9cX7D-GzSWdggkfo7uaI3SKoaZdcXNoc6V328-XwBG3kBRCMvSgGYOWHc4NH_XWrNK32XRH7YxgMyza7LmamVc4-gdrdzGLINTxmmdqr30LpXcCt0fvVDBwXjqnhKUZuOG4V0VBdZe-wGhMBlyrtQWHIMJRb75jXkBvpaT7AeJ4g</stringProp>
-            <stringProp name="mqtt.topic_name">/devices/mac3/events</stringProp>
-            <stringProp name="mqtt.qos_level">1</stringProp>
-            <boolProp name="mqtt.add_timestamp">false</boolProp>
-            <stringProp name="mqtt.message_type">String</stringProp>
-            <stringProp name="mqtt.message_type_fixed_length">1024</stringProp>
-            <stringProp name="mqtt.message_to_sent"></stringProp>
-          </net.xmeter.samplers.PubSampler>
-          <hashTree/>
-        </hashTree>
-      </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="A thread group of 1 sensors for Google" enabled="true">
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">1</stringProp>
-        </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <longProp name="ThreadGroup.start_time">1516358589000</longProp>
-        <longProp name="ThreadGroup.end_time">1516358589000</longProp>
-        <boolProp name="ThreadGroup.scheduler">false</boolProp>
-        <stringProp name="ThreadGroup.duration"></stringProp>
-        <stringProp name="ThreadGroup.delay"></stringProp>
-      </ThreadGroup>
-      <hashTree>
-        <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
-          <intProp name="calcMode">0</intProp>
-          <doubleProp>
-            <name>throughput</name>
-            <value>10000.0</value>
-            <savedValue>0.0</savedValue>
-          </doubleProp>
-        </ConstantThroughputTimer>
-        <hashTree/>
-        <RunTime guiclass="RunTimeGui" testclass="RunTime" testname="Runtime 60s" enabled="true">
-          <stringProp name="RunTime.seconds">60</stringProp>
-        </RunTime>
-        <hashTree>
-          <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 Sensor connected to Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/Users/vincentjoe/Downloads/umar/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/Users/vincentjoe/Downloads/umar/client.p12</stringProp>
-            <stringProp name="mqtt.conn_keep_alive">300</stringProp>
-            <stringProp name="mqtt.conn_attampt_max">0</stringProp>
-            <stringProp name="mqtt.keep_time">1800</stringProp>
-            <stringProp name="mqtt.client_id_prefix">projects/eciot-191612/locations/us-central1/registries/test/devices/mac4</stringProp>
-            <boolProp name="mqtt.conn_share">false</boolProp>
-            <boolProp name="mqtt.client_id_suffix">false</boolProp>
-            <stringProp name="mqtt.reconn_attampt_max">0</stringProp>
-            <stringProp name="mqtt.conn_timeout">10</stringProp>
-            <boolProp name="mqtt.dual_ssl_authentication">true</boolProp>
-            <stringProp name="mqtt.keystore_password">password</stringProp>
-            <stringProp name="mqtt.clientcert_password">password</stringProp>
-            <stringProp name="mqtt.port">8883</stringProp>
-            <stringProp name="mqtt.protocol">SSL</stringProp>
-            <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
-            <stringProp name="mqtt.version">3.1.1</stringProp>
-            <stringProp name="mqtt.user_name">projects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5NjU1NzIsImV4cCI6MTUxNjk2Njc3MiwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.p0B2JcqqK24A3t7s3gdCjAPlgeCMhSUa2bafurVIO_xBcK-9KMdJb_ls95tNsbEgqGJupkhSfCtXljCPdwv8lvT2FOPeESxphYsdBtBJokuxs1qnKtdC6R-odB3AE8DmwM_STJcxxQyRUGiPM2G1NTkcTUNoMFIOersjijeumd8lF0yvSYHV6FmtYHHLB886fwWiC8jAdtybFE4ApdMf9NQQPdPiGY4P9BQuSz5b7LxJzIxvmYS0LsmT9sXUU1ajsKcWFxdfyTKn1oe1TM9soX51TYv-JJA0-OTFrZBjys7TqUVMbVAjHD1zZP4anbzwrzd1-9ga9zH2vtGog2sfWA </stringProp>
-            <stringProp name="mqtt.topic_name">/devices/mac4/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
             <stringProp name="mqtt.message_type">String</stringProp>
@@ -516,7 +284,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/totalGoogle/throughput.csv</stringProp>
+        <stringProp name="filename">../throughput.csv</stringProp>
         <longProp name="interval_grouping">1000</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
@@ -560,8 +328,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/totalGoogle/agg.csv</stringProp>
-        <boolProp name="useGroupName">true</boolProp>
+        <stringProp name="filename">../agg.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="false">
@@ -626,7 +393,7 @@
         <stringProp name="filename">/Users/vincentjoe/Desktop/TUB Classes/EnterpriseComputing/tasks/benchmarking-ec/jmeter/Workbook1.csv</stringProp>
       </ResultCollector>
       <hashTree/>
-      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseTimesOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Times Over Time" enabled="true">
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.LatenciesOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Latencies Over Time" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -660,7 +427,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/totalGoogle/latency.csv</stringProp>
+        <stringProp name="filename">../latency.csv</stringProp>
         <longProp name="interval_grouping">500</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
