@@ -1,0 +1,4 @@
+Label,# Samples,Average,Median,90% Line,95% Line,99% Line,Min,Max,Error %,Throughput,Received KB/sec,Sent KB/sec
+100 sensors AWS,19787,6,6,8,11,30,3,216,0.000%,166.38217,3.25,0.00
+100 sensors Google,662,71,68,78,83,98,0,456,0.604%,5.60200,0.11,0.00
+TOTAL,20449,8,6,9,18,72,0,456,0.020%,171.94871,3.36,0.00
