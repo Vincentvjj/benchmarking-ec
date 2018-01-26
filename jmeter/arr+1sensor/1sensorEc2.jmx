@@ -106,8 +106,8 @@
         </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 sensors AWS" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/aws/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/aws/client.p12</stringProp>
+            <stringProp name="mqtt.keystore_file_path">~/benchmarking-ec/keys/aws/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">~/benchmarking-ec/keys/aws/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -222,8 +222,8 @@
         </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="1 sensors Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
+            <stringProp name="mqtt.keystore_file_path">~/benchmarking-ec/keys/google/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">~/benchmarking-ec/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -240,7 +240,7 @@
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
             <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5MjMxMzgsImV4cCI6MTUxNjkyNDMzOCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.GgDJ6FbDhn5T26HpsF_LkZTDVodnqC6qsEILrvLLnf9Gusp6hSYwR-x3aVtR3a-s7skoMyhpUQz_Afrwe8AyS2Ba_XisSAQNQ0ussqC7ZMRRWOYDTbw4ZfunxpNCBG8TnNnPnOqsNaIrtEfOpJ4BkPeEjJb9utNeaXyYf5IwlxA3K1l7wKFNB_XhAXFKhmKlWq1ycXvDAKE_fboI83qqqpunYgVYVY0UflpmX7d3U4fOXDmeRFqUrwEHWeL2jFfzeIUj6tCfaNpknBmdtStlSg4Mu988hQVGy6uQ4TLEVFmHLUP_zVeHRBr7GMZn8hCDHFbwOzZSkwAQXBilWPMXXw</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5ODQxODUsImV4cCI6MTUxNjk4NTM4NSwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.dOQ8jgcT4_PwWeOQju0Y2kelvSyYy7y4LEvDvrr3aHOCwq5i46eCQ1C-mmip1JFKA988EhTRsHTcRGmTnmXUTnl5FhlJvzdFwPTQc1f3hEI_FBOqUg-WZZ_ca7GHaI0jI5GHCkZpTE5sKROGge4210UzbaWq0lULs1AFoSHG95nn0Nfa3PtE5ow9VtyLRErnkvsV33SZGC06OfpDPAfS6VWm1Ym65u2Q6QMkoQrjYdM7NGMr2Dd4Qqf7NHimBcHpMe_BoyWOccqByeN6z6xxs5imYNkH_RTqBW3awu7U3dHRZC0jLdvDqnDS9qIb_Wy4tvDN-bKQ0ZXarpz1A3M8DA</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
@@ -284,7 +284,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/throughput.csv</stringProp>
+        <stringProp name="filename">~/benchmarking-ec/jmeter/throughput.csv</stringProp>
         <longProp name="interval_grouping">1000</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
@@ -328,7 +328,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/agg.csv</stringProp>
+        <stringProp name="filename">~/benchmarking-ec/jmeter/agg.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="false">
@@ -427,7 +427,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/latency.csv</stringProp>
+        <stringProp name="filename">~/benchmarking-ec/jmeter/latency.csv</stringProp>
         <longProp name="interval_grouping">500</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>

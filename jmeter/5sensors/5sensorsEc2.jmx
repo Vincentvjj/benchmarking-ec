@@ -106,8 +106,8 @@
         </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 sensors AWS" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/aws/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/aws/client.p12</stringProp>
+            <stringProp name="mqtt.keystore_file_path">~/benchmarking-ec/keys/aws/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">~/benchmarking-ec/keys/aws/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -222,8 +222,8 @@
         </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 sensors Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
+            <stringProp name="mqtt.keystore_file_path">~/benchmarking-ec/keys/google/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">~/benchmarking-ec/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -240,7 +240,7 @@
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
             <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5NjYyNDEsImV4cCI6MTUxNjk2NzQ0MSwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.lGlG3fA0pQF9_RRVBkqDnRyaqx0lSUwZ-5jXDHK7QVxR7zVqWOdcnvHJK4q3sLSHCkNKrUkCN0vPWDH76fZxm_-GaccshzivZpGXyOBLw14oBw0-kqLq_U1oZzrfMGPjstAdDmjfaZ8dn2UbEWxoLySoEZpTOGKx330irSHWRbfobaA9Ew65pEL_hwJv6tD3gIbOp_AxntQAO87P7mZKoZ2UWJ5ZIgjlpEIWbZvPCa9XpqLwwbo6C_6nEzfZZjO1hnu61UxdzJHl4jV4_nMCh9lM8b7t4yVw2opNby31vYg-0tODheMF2cmTzQhu7TY8erZbxuYjqCxLEHo6s58hYA</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5ODQwMjQsImV4cCI6MTUxNjk4NTIyNCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.eYD9m6XEAULDuRjRpeSgQFR5_2z0_ZxRZKBfNupT8CkvcG0HZJ5wxaZzOE82aOUHCe3pduuLiDi0tzfASiePmp9SN3aihjXWq6GPAVTnr5i5QgEn1Em0QAy21vnOERHUb_jQCRByvf6CelHs_vHVih8v9Ba7gJdYsvxmI5KShhgDM5NJnSjAEzHIbEndpwlg22RHWRcsz_WUDvN7J_26yyWc038TZlwK1TlFI-D_Ntd0P5B0QM8sTSGQt1fNHcT5wo9b0yT7bBzLTlzMwri0z8xwmoq3eBak1UGuv_0lE94YosoyPF6sWTaA7276L4_Oxgblp3YXTAOE6HceB1kxdA</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
@@ -271,7 +271,7 @@
           <doubleProp>
             <name>throughput</name>
             <value>10000.0</value>
-            <savedValue>10000.0</savedValue>
+            <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
         <hashTree/>
@@ -280,8 +280,8 @@
         </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 sensors Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
+            <stringProp name="mqtt.keystore_file_path">~/benchmarking-ec/keys/google/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">~/benchmarking-ec/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -298,7 +298,7 @@
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
             <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5NjYwMDYsImV4cCI6MTUxNjk2NzIwNiwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.XrFHPQgr1dNcxjZ7AUNEI5LnV1HbE875Q2RgcXUZ4geA4Ske9GDKusvDLFQ7kGUdK78B4QoR3l4rLIUJex5vGi_O3u9_oebLO0gpjy5z_qpbg14aih6eUHsGfkPeRKQsd4pc7gxLhu3g0Kv0NvwQiBCFfEg2DHAi5yc9N5ueGr5jGcDVQVyFXLVDumZQ58Pr22kA91fMSPtEW-5cnCZKLGIi2yqJAWZx1jwL0ZYsA6x0T6NAlsm0MEPnyBZSRw0TZ-QQzIVYWq9lgFreAxPPMvTQQsXuXIrw8v2wa7ZUnEoyS21IKLIV5jHDjfk5EZsagS-LWk0aQhsCIw1F8WAD2A</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5ODQwNDQsImV4cCI6MTUxNjk4NTI0NCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.agKcsvFPEGd0lVxemIqMh1Huuj8afUWEt4bjK-pvCF_NyuDxBokiVapo_QHd2mEAMmjHoVbRXCWP7pl1bhv4O6hLJoKLslVtPbRJaTpXvKdpUEgtdcVbn4q3Ubc3KCpr-0eD_KiPNp9XexLjm3hT0lgihONNFukoUtat6mXI0IHFCsuM9sbtguoGFTPL0yl72LAFJxnLxJu9yR7RrApG9fX7ERYcfyY0YgO5f9Jyq3VuK3mdoPtotXKkyTGIZhBhmzT3pohDGNNMAqL8ElYI9mBq2h3u_3RwgbzPU9uerbU3riGaPiq1_BXIV5t-yBx4pJ2pC12nobVuMfSQUDb2Rg</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac1/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
@@ -329,7 +329,7 @@
           <doubleProp>
             <name>throughput</name>
             <value>10000.0</value>
-            <savedValue>10000.0</savedValue>
+            <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
         <hashTree/>
@@ -338,8 +338,8 @@
         </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 sensors Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
+            <stringProp name="mqtt.keystore_file_path">~/benchmarking-ec/keys/google/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">~/benchmarking-ec/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -356,7 +356,7 @@
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
             <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5NjYwMjcsImV4cCI6MTUxNjk2NzIyNywiYXVkIjoiZWNpb3QtMTkxNjEyIn0.HgQMLff4dFj8Xta-rdrbuOjicS0zTdzCr46Aa-9xmhIebI7sS_Y2pR3Ju5kb3nMkXLt0bVrO-_5nIWP7XIQb1zikYa4--K7Hn2jmuuNJ_0cBVIkS5o5EHZhEV2mHtAOvLn33ItzMZV-ERdKcGOmtnwLX49DUnGe8Xk4rJ3cWOprQDotUlQmC291tm_R4-vHqupLEnjU28F7llztO_RNCWEsTQsicndEx8gL4fyXyAeQZ9KZ0uW0kW1iU6-NYkQm4HvvGrcM5VSHnmP70a2cv2A1hsyETsoP9dHVoHzmSFGsm17aHnHIdVQ72R4gCsjAhe2qGvtLvRWGz3FQi_FHCSw</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5ODQwNjAsImV4cCI6MTUxNjk4NTI2MCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.IflDheEfyIPCmXURpoL0jPRd0O7X4reJr3iACNv9cfOyOfD2hCb_-1pug7OWbHGat8_Ye4ZrDo4nV-XPy8AZmCLC5R75ac2iWBlAX0uPmz5_0PCiF4MMFIBl9f_7dduYdWiCnyQv2sSsJwZ1yOI84jBxdcA8b01F3c0IpobR2XKjkhz0YlRTDoUA3JGcvPRS0itqGLBmRGqfzL77QI3prgAQgAI_9VDveCpFJqVVmbGQ_Bb54YrbInU5oysGqJE_IVdqRlwgH_PCf3FJlrqe2Lk0hzEzzbL8mVAQWsZ95IwW0BOvEoBQznW7fE4zcw1eQwcVNxHkRJmme7fodrHuUQ</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac2/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
@@ -387,7 +387,7 @@
           <doubleProp>
             <name>throughput</name>
             <value>10000.0</value>
-            <savedValue>10000.0</savedValue>
+            <savedValue>0.0</savedValue>
           </doubleProp>
         </ConstantThroughputTimer>
         <hashTree/>
@@ -396,8 +396,8 @@
         </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 sensors Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
+            <stringProp name="mqtt.keystore_file_path">~/benchmarking-ec/keys/google/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">~/benchmarking-ec/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -414,7 +414,7 @@
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
             <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5NjYwNDgsImV4cCI6MTUxNjk2NzI0OCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.azkot2jpgfz5ylZOYuhK_CEEDdfWgxx54OGJhgZViGpm0rQ5T6GcILGoyrHEE2quPxHXUd0MzAAjTuwbSFRg5oLnic_nM8oCzoWqz0_ah26gy2DlGKHQjzOaQIfUakDTwtjnfVn5FDQ8dIE2FKxKFAYoCY4l9NAXDRFWsLFz3WLZbzwuf0WopDaJTmgrkPRlqHXZ14OsFIXZwj75oaSJD7kpoQs_l-i1jaADs0fj8bPmlTZhpyfYPvfQi0HLhiMfhVTkjn3S0jxMfTafaSEiqWIaATWG8GecbYojR-dGyckiDiY7rDTEOngaOgsZgHIOaeBfWveFmwHcygUYdUl5bw</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5ODQwNzYsImV4cCI6MTUxNjk4NTI3NiwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.cThxNW-De_G5po-90027hdBtoqB9mgQm4blkZAoIFrF11klM4yKpDFiocS5To7x0loTahFGI3r68ocwQN8ipwdfd-MWANLrX9ff1-H8w9cesFVY9YqWODl2eQjVGGc2pd1akNWyx8cvQLxW45UOSbDnVwac-KIAye8yxGa4_INkX-Fduka39X_xHp6u1VjV46csCpDTpcqA2BvzTqEhdA63NTuRQ49KWAVX15iKgK-2Z7As63d8ndSRD5pbWjYxUiLoFVpqlCN68nJ8FRkjnk8pcSOVF744hdzezIM1Syd7ZRmaIeqgKT8ldlcYSnkXkUpOh1LXCC3vg1B2u9lb_lA</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac3/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
@@ -454,8 +454,8 @@
         </RunTime>
         <hashTree>
           <net.xmeter.samplers.PubSampler guiclass="net.xmeter.gui.PubSamplerUI" testclass="net.xmeter.samplers.PubSampler" testname="5 sensors Google" enabled="true">
-            <stringProp name="mqtt.keystore_file_path">/home/ec2-user/keys/google/emqtt.jks</stringProp>
-            <stringProp name="mqtt.clientcert_file_path">/home/ec2-user/keys/google/client.p12</stringProp>
+            <stringProp name="mqtt.keystore_file_path">~/benchmarking-ec/keys/google/emqtt.jks</stringProp>
+            <stringProp name="mqtt.clientcert_file_path">~/benchmarking-ec/keys/google/client.p12</stringProp>
             <stringProp name="mqtt.conn_keep_alive">300</stringProp>
             <stringProp name="mqtt.conn_attampt_max">0</stringProp>
             <stringProp name="mqtt.keep_time">1800</stringProp>
@@ -472,7 +472,7 @@
             <stringProp name="mqtt.server">mqtt.googleapis.com</stringProp>
             <stringProp name="mqtt.version">3.1.1</stringProp>
             <stringProp name="mqtt.user_name">unusedprojects/eciot-191612/locations/us-central1/registries/test/devices/mac</stringProp>
-            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5NjYwNjgsImV4cCI6MTUxNjk2NzI2OCwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.cZIlJifHI4BosWLssutSAuAb4KfhtRsryJZbWLeY3NYLKUn-OVCFoiyOYjxnsaW2e1lE1s7doZ6QpCgCsgwznoaOalwjx1jhNgiyihJorDXE-w-mOlUFAF35PI51gSRLpmCjgcXDBtmHdnKrAB7w48s_ZcnagIXjzcV17OGNfRgNmsL7l93XF5roEq4MUZrghShcqvW_QKqoyFw9GI-SR1i5id4uhBwQ8Rb5MnYL5BZLStv6H2TxgbDMXRuAu-NGw3yE3f7mWuRYnR5nK3_zMTK7F_bHCtHjBMlZtH53Ls154Q5SaYODQSovTJoMd5eYsayJFXpaz1HL2MWauEgqLg</stringProp>
+            <stringProp name="mqtt.password">eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MTY5ODQwOTIsImV4cCI6MTUxNjk4NTI5MiwiYXVkIjoiZWNpb3QtMTkxNjEyIn0.ZMAo6es9CEcgVFPeLzb8xbZIBBKNpu76zS_-8p-94kwO9nUEg2ezXBab3X4VXw3UaDhBynTspFYN3vN-P6ztxbCSlQmEKNfXOPmVV4tiDk6D0Zwo3iBpKXMmPbfPXlJ270si_t3QXKSwdOsXKqoIp0BCy8qeSe6VpJsh9-0-h_GqOjk50v3M91594YIU8iYZtbOeBZ0LEHKsacOI5falth-EkUvMWhpMnr7gmmB_Kv0Kg7VAavauLsqsp9iElE6aRmEkSS2nUGK9iBYLg-WEs3bOsa4rR4jzzVirFo9-C4pYCTgxeRHv71TS6J_tZf84zQeq3ZlWVkbxkthXB89_8w</stringProp>
             <stringProp name="mqtt.topic_name">/devices/mac4/events</stringProp>
             <stringProp name="mqtt.qos_level">1</stringProp>
             <boolProp name="mqtt.add_timestamp">false</boolProp>
@@ -516,7 +516,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/throughput.csv</stringProp>
+        <stringProp name="filename">~/benchmarking-ec/jmeter/throughput.csv</stringProp>
         <longProp name="interval_grouping">1000</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
@@ -560,7 +560,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/agg.csv</stringProp>
+        <stringProp name="filename">~/benchmarking-ec/jmeter/agg.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="false">
@@ -659,7 +659,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/home/ec2-user/benchmarking-ec/jmeter/latency.csv</stringProp>
+        <stringProp name="filename">~/benchmarking-ec/jmeter/latency.csv</stringProp>
         <longProp name="interval_grouping">500</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
