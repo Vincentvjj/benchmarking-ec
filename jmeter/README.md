@@ -1,5 +1,24 @@
+PREREQUISITES
+
+- Jmeter 3.3 package with plugins
+- Java 8
+- NodeJs
+- Required Certificates/keys
+
+
 HOW TO?
+- clone
+- download https://github.com/emqtt/mqtt-jmeter
+- add it to the Jmeter root lib/ext
 
-Refer to this documentation: https://github.com/emqtt/mqtt-jmeter
+- Run mqtt_example/cloudiot_mqtt_example_nodejs.js with the correct parameters
+- copy the JWT token logged in the console
+- Open .jmx file, and paste the password that is matched to that client ID
 
-Based on the project: https://www.blazemeter.com/blog/testing-the-mqtt-messaging-broker-for-iot-a-guide
+- Run jmeter on the targetted .jmx file
+
+
+
+
+
+

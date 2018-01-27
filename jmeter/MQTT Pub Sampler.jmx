@@ -516,7 +516,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/totalGoogle/throughput.csv</stringProp>
+        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/totalAWS/throughput.csv</stringProp>
         <longProp name="interval_grouping">1000</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
@@ -560,7 +560,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/totalGoogle/agg.csv</stringProp>
+        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/totalAWS/agg.csv</stringProp>
         <boolProp name="useGroupName">true</boolProp>
       </ResultCollector>
       <hashTree/>
@@ -660,7 +660,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/totalGoogle/latency.csv</stringProp>
+        <stringProp name="filename">/Users/vincentjoe/Desktop/graphs/totalAWS/latency.csv</stringProp>
         <longProp name="interval_grouping">500</longProp>
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
