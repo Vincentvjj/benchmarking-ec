@@ -25,9 +25,9 @@ node cloudiot_mqtt_example_nodejs.js --projectId=eciot-191612 --cloudRegion=us-c
 {JMETER PATH}/bin/jmeter -n -t test.jmx
 ```
 
-REPORTS CREATED BY JMETER 
+REPORTS CREATED BY JMETER </br>
 https://drive.google.com/drive/u/1/folders/1YRqLHGgEtq-OskrEpAdqznbluMWwH0Xx
 
-HAPPY PATH
+HAPPY PATH </br>
 This includes our arrival phase, 1 sensor, and 5 sensors scripts which we use to produce the result. Located in the happyPath/ folder
 
