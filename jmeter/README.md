@@ -1,13 +1,13 @@
 PREREQUISITES
 
-- Jmeter 3.3 package with plugins
+- Jmeter 3.3 package with plugins - https://jmeter-plugins.org/downloads/old/
 - Java 8
 - NodeJs
-- Required Certificates/keys
+- Required Certificates/keys. We have provided our keys in the ../keys and ../keys/aws folder, for the sake of easily reporducing the test. But you can also create one, refer to this page: https://www.blazemeter.com/blog/how-set-your-jmeter-load-test-use-client-side-certificates
 
 
 HOW TO?
-- clone
+- git clone
 - download https://github.com/emqtt/mqtt-jmeter
 - add it to the Jmeter root lib/ext
 
