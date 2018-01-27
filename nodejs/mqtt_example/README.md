@@ -1,6 +1,3 @@
-<img src="https://avatars2.githubusercontent.com/u/2810941?v=3&s=96" alt="Google Cloud Platform logo" title="Google Cloud Platform" align="right" height="96" width="96"/>
-
-# Google Cloud IoT Core NodeJS MQTT example
 
 This sample app publishes data to Cloud Pub/Sub using the MQTT bridge provided
 as part of Google Cloud IoT Core.
