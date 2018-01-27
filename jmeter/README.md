@@ -23,7 +23,8 @@ node cloudiot_mqtt_example_nodejs.js --projectId=eciot-191612 --cloudRegion=us-c
 {JMETER PATH}/bin/jmeter -n -t test.jmx
 ```
 
-
+REPORTS CREATED BY JMETER 
+https://drive.google.com/drive/u/1/folders/1YRqLHGgEtq-OskrEpAdqznbluMWwH0Xx
 
 
 
